@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<script src="https://use.typekit.net/gkr1eqt.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<link rel="stylesheet" type="text/css" href="https://www.thecope.net/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="https://www.thecope.net/css/site.css">
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+
+	<link rel="stylesheet"
+	    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+</head>
+
+<body class="content">
+	<div class="article">
+		<p data-date="dd MMMM yyyy" class="dataLine"></p>
+		<a data-title class="data"></a>
+		<div data-document></div>
+	</div>
+</body>
+
+<footer>
+   © 2016-2020 Andrew Cope
+</footer>
+<script>
+function highlightCode() {
+    var pres = document.querySelectorAll("pre>code");
+    for (var i = 0; i < pres.length; i++) {
+        hljs.highlightBlock(pres[i]);
+    }
+}
+highlightCode();
+</script>
+
+
+</html>
